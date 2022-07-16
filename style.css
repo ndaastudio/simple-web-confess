@@ -1,0 +1,258 @@
+:root {
+    --warna-bg: rgba(0, 0, 0, .5); 
+    --warna-teks: #fff;
+    --warna-bingkai: #fff;
+    --bingkai: 8px;
+    --gaya-font: 'Josefin Sans', sans-serif;
+    }
+  body {
+    background-color: #000;
+    font-family: var(--gaya-font);
+    padding: 20px 25px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  #bodyblur {
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    transition: all 1s ease;
+  }
+  #wallpaper {
+    width: 100%;
+    height: 100%;
+    transition: all 2s ease;
+  }
+  @media only screen and (max-width: 600px) {
+    #wallpaper {
+        width: auto;
+        height: 100%;
+        transition: all 2s ease;
+      }
+  }
+  blockquote {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.1);
+    transition: all 1s ease;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  blockquote {
+    width: 400px;
+    background: var(--warna-bg);
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    border-radius: 20%;
+    color: var(--warna-teks);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    line-height: 1.3em;
+    padding: 0 25px 0 25px;
+  }
+  blockquote img {
+    display: none;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8%;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0 0 0;
+  }
+  #fotoakhir {
+    opacity: 0.1;
+    margin-bottom: 15px;
+    transition: all 1.2s ease;
+    transform: scale(0.1);
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4em;
+    transition: all 0.8s ease;
+  }
+  #kalimat {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 700;
+    transform: scale(0.1);
+  }
+  #kalimatb {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  #kalimatc {
+    font-size: 17px;
+  }
+  #kalimatd {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  #Tombol {
+    position: relative;
+    opacity: 0;
+    margin: 0;
+    display: flex;
+    align-items: left;
+    list-style: none;
+    transform: scale(0.1);
+    transition: all 1s ease;
+  }
+  #Tombol a {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    margin: 12px 0 12px 0;
+    transition: all 0.2s ease;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid var(--warna-bingkai);
+    border-radius: 8px;
+    line-height: 15px;
+    background: var(--warna-bg);
+    color: var(--warna-teks);
+    font-size: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    z-index: 1;
+  }
+  #Tombol a:hover {
+    transform: scale(0.9);
+  }
+  #buttonv2 {
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    background: var(--warna-bg);
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 10px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+  }
+  #Bn2 {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+  }
+  
+  #Content {
+    animation-name: none;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    opacity: 0;
+    margin-top: 50px;
+    width: 100%;
+    height: 180px;
+    transition: all 0.8s ease;
+  }
+  #Content > * {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1px;
+  }
+  
+  #fotolove img {
+    transition: all 0.5s ease;
+    width: 75px;
+    height: 75px;
+    padding: 0;
+    background: none;
+  }
+  #suratin img {
+    display: inline-flex;
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 7px 29px 0px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10%;
+    padding: 10px;
+    width: 140px;
+    height: 110px;
+    transition: all 0.3s ease;
+  }
+  #ket {
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  #suratin img:hover {
+    transform: scale(0.9);
+  }
+  
+  .swal2-modal > * {
+    font-size: 17px;
+  }
+  .swal2-title {
+    line-height: 1.3em;
+    font-size: 17px;
+    text-align: center;
+    padding: 15px 50px 0 50px;
+  }
+  .swal2-container.swal2-backdrop-show {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .swal2-timer-progress-bar-container > * {
+    opacity: 0.7;
+    background: #00b6ff;
+    margin: 0 2px;
+  }
+  .swal2-modal {
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    max-width: 320px;
+    background: rgba(250, 250, 250, 1);
+    border-radius: 8px;
+    top: -80px;
+  }
+  
+  .fa-heart {
+    opacity: 0.3;
+    color: white;
+    font-size: 27px;
+    position: absolute;
+    animation: heartMove linear 1;
+    top: -10vh;
+    z-index: 0;
+  }
+  @keyframes heartMove {
+    0% {
+      transform: translateY(-10vh);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  #pesanstiker > *,
+  #pesanAwal,
+  #tgeser,
+  #tklik,
+  #tiya,
+  #linkmp3,
+  #fotoakhir2,
+  #pesanditolak > *,
+  #kalimat2,
+  #kalimatb2,
+  #kalimatc2,
+  #kalimat3,
+  #kalimatb3,
+  #kalimatc3 {
+    display: none;
+  }
+  
