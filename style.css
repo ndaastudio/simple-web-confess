@@ -223,8 +223,8 @@
   }
   
   .fa-heart {
-    opacity: 0.3;
-    color: white;
+    opacity: 0.5;
+    color: red;
     font-size: 27px;
     position: absolute;
     animation: heartMove linear 1;
